@@ -1,0 +1,49 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "/home/skabadze/.config/fastfetch/ascii/smile.txt" 
+  },
+  "modules": [
+    {
+	    "type": "custom",
+	    "format": "Software"
+    },
+    "separator",
+    "os",
+    "kernel",
+    "packages",
+    "shell",
+
+    "break",
+
+    "wm",
+    "terminal",
+    "terminalfont",
+
+    "break",
+
+    {
+	    "type": "custom",
+	    "format": "Hardware"
+    },
+    "separator",
+    "host",
+    "cpu",
+    "gpu",
+    "memory",
+    // "disk",
+    "break",
+    {
+	    "type": "custom",
+	    "format": "Status"
+    },
+    "separator",
+    "uptime",
+    "break",
+    {	
+	    "type": "colors",
+	    "symbol": "circle"
+    }
+  ]
+}
