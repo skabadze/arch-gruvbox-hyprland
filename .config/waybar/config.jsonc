@@ -23,7 +23,6 @@
     "modules-right": [
         "tray",
 	"custom/pomo",
-	"custom/vpn",
         "network",
         "pulseaudio#vol",
         "pulseaudio#mic",

@@ -1,49 +1,51 @@
-@import url("../hypr/colors.css");
-
 * {
 	background-image: none;
 	box-shadow: none;
 }
 
 window {
-	background-color: rgba(28, 28, 28, 0.8);
+	font-size: 8pt;
+	background-color: rgba(32, 31, 31, 0.3);
 }
 
 button {
-    margin: 3px;
-    border-radius: 0;
-    border-color: black;
-    text-decoration-color: #FFFFFF;
+    border-radius: 25;
+    border-color: #18191a;
+	text-decoration-color: #FFFFFF;
     color: #FFFFFF;
-    background-color: @bg;
-    border-style: solid;
-    border-width: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 25%;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-style: solid;
+	border-width: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25%;
+	margin: 100 5;
 }
 
 button:focus, button:active, button:hover {
-	background-color: #32302f;
+	background-color: rgba(5, 5, 5, 0.3);
 	outline-style: none;
+	background-size: 35%;
+	transition: all 0.2s cubic-bezier(.55,0.0,.28,1.682);
 }
 
 #lock {
-    background-image: image(url("./icons/lock.png"));
+background-image: url("icons/lock.png");
 }
 
 #logout {
-    background-image: image(url("./icons/logout.png"));
+background-image: url("icons/logout.png");
 }
 
 #suspend {
-    background-image: image(url("./icons/sleep.png"));
+background-image: url("icons/suspend.png");
 }
 
 #shutdown {
-    background-image: image(url("./icons/power.png"));
+background-image: url("icons/shutdown.png");
 }
 
 #reboot {
-    background-image: image(url("./icons/restart.png"));
+background-image: url("icons/reboot.png");
 }
+
