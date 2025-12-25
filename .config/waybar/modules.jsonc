@@ -138,14 +138,6 @@
       "format": "{}",
       "exec": "~/.config/niri/scripts/waybarCava.sh"
     },
-    // "custom/weather": {
-    //     "format": "{}",
-    //     "exec": "python ~/.config/niri/scripts/weather.py",
-    //     "restart-interval": 300,
-    //     "return-type": "json",
-    //     "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)"
-    //     // "format-alt": "{alt}",
-    // },
     "custom/pomo": {
       "format": "{}  <span font='16px'></span>",
       "tooltip": false,

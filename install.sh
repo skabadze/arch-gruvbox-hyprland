@@ -5,13 +5,17 @@ if [ "$EUID" -eq 0 ]
   exit
 fi
 
-sudo pacman --noconfirm -S fastfetch fuzzel kitty thunar tumbler swaync waybar hyprland hyprlock hypridle hyprpolkitagent nwg-look pipewire pavucontrol bluez blueman mpv ttf-roboto ttf-nerd-fonts-symbols otf-font-awesome swww btop firewalld flatpak git base-devel
+sudo pacman --noconfirm -S fastfetch fuzzel kitty thunar tumbler swaync waybar hyprland hyprlock hypridle hyprpolkitagent xdg-desktop-portal-hyprland nwg-look pipewire pipewire-pulse pavucontrol bluez blueman mpv ttf-roboto ttf-nerd-fonts-symbols otf-font-awesome ttf-dejavu noto-fonts-cjk swww btop firewalld flatpak git base-devel rsync
 
 sudo systemctl enable firewalld
 sudo systemctl start firewalld
 
 swww-daemon & disown
 swww img ./gruvbox_girl.png 
+
+cd ./.config/
+mkdir ~/.config
+cp -r * ~/.config
 
 cd ~
 mkdir git-clones
@@ -22,16 +26,8 @@ makepkg -si
 
 paru --noconfirm -S wlogout waypaper
 
-cd ./.config/
-mkdir ~/.config
-cp -r * ~/.config
+sudo pacman -S blender krita kdenlive wine steam heroic-games-launcher prismlauncher qbittorrent supertuxcart audacious bitwarden openrgb element-desktop prism-launcher libreoffice code thunderbird
 
-hyprctl reload
-killall waybar
-waybar & disown
-
-sudo pacman -S blender krita kdenlive wine steam heroic-games-launcher qbittorrent supertuxcart audacious bitwarden openrgb element-desktop prism-launcher libreoffice code thunderbird
-
-paru -S vesktop mullvad-vpn-bin librewolf-bin 
+paru -S vesktop-bin mullvad-vpn-bin librewolf-bin autofs heroic-games-launcher-bin prism-launcher
 
 echo "You should restart your PC now."
