@@ -5,7 +5,7 @@ if [ "$EUID" -eq 0 ]
   exit
 fi
 
-sudo pacman --noconfirm -S fastfetch fuzzel kitty thunar tumbler swaync waybar hyprland hyprlock hypridle hyprpolkitagent xdg-desktop-portal-hyprland nwg-look pipewire pipewire-pulse pavucontrol bluez blueman mpv ttf-roboto ttf-nerd-fonts-symbols otf-font-awesome ttf-dejavu noto-fonts-cjk swww btop firewalld flatpak git base-devel rsync
+sudo pacman --noconfirm -S fastfetch fuzzel kitty thunar tumbler swaync waybar hyprland hyprlock hypridle hyprpolkitagent xdg-desktop-portal-hyprland nwg-look pipewire pipewire-pulse pavucontrol bluez blueman mpv ttf-roboto ttf-nerd-fonts-symbols otf-font-awesome ttf-dejavu noto-fonts-cjk swww btop firewalld flatpak git base-devel rsync zsh zsh-completions
 
 sudo systemctl enable firewalld
 sudo systemctl start firewalld
